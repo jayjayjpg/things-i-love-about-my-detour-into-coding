@@ -1,0 +1,140 @@
+@import 'materialize-sass/materialize';
+@import 'revealproto';
+
+.reveal .controls .navigate-left {
+    left: 0;
+}
+
+.techs img, .techs p {
+  opacity: .5;
+  transition: transform .2s ease-in;
+}
+.reveal {
+.techs img {
+  max-width: none;
+  max-height: none;
+}
+
+.techs .pop-up img {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+}
+.reveal {
+  section {
+    h1, h2, h3, h4, h5,h6, p {
+      color: #444;
+      font-family: 'Roboto', sans-serif;
+      text-shadow: none;
+    }
+    h1 {
+      font-size: 2.8em;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
+    &.js-libraries {
+      img, svg {
+        height: 5em !important;
+        width: auto !important;
+        max-width: none;
+        max-height: none;
+      }
+    }
+    img {
+      max-height: 12em;
+      width: auto;
+    }
+  }
+  
+  .material-icons {
+    &.pos-down {
+      top: .25em;
+      position: relative;
+    }
+    &.large {
+      font-size: 5em;
+    }
+  }
+
+  
+  .subtitle {
+    font-size: .6em;
+    font-weight: 200;
+    &.corner {
+      position: absolute;
+      bottom: .5em;
+      left: .5em;
+    }
+  }
+
+  .slides {
+    .btn {
+        height: 3em;
+        opacity: 1;
+    }
+  }
+
+  .sparkle {
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background: -webkit-linear-gradient(transparent, transparent),
+                url(../img/glitter1.gif) repeat;
+    background: -o-linear-gradient(transparent, transparent);
+    background: linear-gradient(transparent, transparent),
+                url(../img/glitter1.gif) repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .sparkle-bg {
+    background-image: url(../img/glitter2.gif);
+    background-color: transparent;
+    background-repeat: repeat;
+    background-position: center center;
+  }
+  .tiles {
+    text-align: center;
+    
+    .container:after {
+      display: table;
+      clear: both;
+    }
+    .on-top {
+      color: #800080;
+      position: absolute;
+      top: 3em;
+      padding: 0 2em;
+      z-index: 10;
+      text-shadow: 2px 2px 2px #fff;
+    }
+    .tile {
+      overflow: hidden;
+      height: 6em;
+      width: 6em;
+      float: left;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      
+      img {
+        position: relative;
+        left: -25%;
+        display: block;
+        height: 6em;
+        width: auto;
+        max-width: none;
+        margin: 0 auto;
+        border: none;
+        &.no-pos {
+          left: 0;
+        }
+        
+      }
+    }
+  }
+  .no-border {
+    border: none;
+    box-shadow: none;
+  }
+}
